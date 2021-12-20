@@ -1,0 +1,35 @@
+*{box-sizing: border-box;
+margin: 0px;
+padding: 0px;}
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.flex-body{
+    display: flex;flex-direction: column;
+    border: rgb(194, 192, 192) solid;background-color: rgb(87, 87, 87);border-radius: 10px;
+    align-items: center;
+    width: 25em;height: 30em;
+    margin: auto;
+}
+.text-display {border: rgb(255, 255, 255) solid;
+    height: 6em;background-color: rgb(0, 0, 0);width: 90%;color: white;
+    margin-top: 30px;border-radius: 10px;font-size: 20px;text-align: right;
+}
+#textResult{ background-color:rgb(0, 0, 0);color: rgb(255, 255, 255);height: 3em;}
+ 
+.gridarea-numb{
+display: grid;
+border: solid rgb(134, 134, 134);
+width: 90%;margin-top: 2em;
+grid-template-columns: repeat(3,1fr);grid-gap: 10px;
+}
+button{
+    background-color: white;border: none;padding: 10px 1px;border-radius: 50px;
+}
+button:hover{background-color: rgb(112, 112, 112);}
+button:active{animation: prueba 1000s infinite;}
+@keyframes  prueba{
+0%{ background-color: rgb(0, 0, 0);color: white;}
+}
